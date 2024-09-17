@@ -75,3 +75,9 @@ if (cursor.active) {
 		
 	}
 }
+
+var kill = keyboard_check_pressed(vk_lalt);
+if (kill == true) {
+	//instance_destroy();
+	room_goto(0);
+}
