@@ -80,4 +80,8 @@ var kill = keyboard_check_pressed(vk_lalt);
 if (kill == true) {
 	//instance_destroy();
 	room_goto(0);
+	//TODO: make room_goto trigger when battle is over
+	//summon overworld slimes naturally (so that they can remember if they've been fought)
+	//fix joker
+	//dont switch mlg's waters around
 }
