@@ -1,4 +1,4 @@
- instance_deactivate_all(true);
+  instance_deactivate_all(true);
  
 units = [];
 turn = 0;
@@ -200,6 +200,8 @@ function BattleStatePerformAction() {
 }
 
 function BattleStateVictoryCheck() {
+	
+	 
 	
 	battleState = BattleStateTurnProgression;
 }
