@@ -200,8 +200,14 @@ function BattleStatePerformAction() {
 }
 
 function BattleStateVictoryCheck() {
-	
-	 
+	//Checks if there are still enemies left
+	for(var i = 0; i < array_length(enemyUnits); i++) {
+		if(enemyUnits[i]) {
+			room_goto(0);
+		}
+	}
+	//var _enemyAction = _unit.AIscript();
+	//if (_enemyAction != -1) BeginAction(_unit.id, _enemyAction[0], _enemyAction[1]);
 	
 	battleState = BattleStateTurnProgression;
 }
