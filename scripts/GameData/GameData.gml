@@ -63,7 +63,7 @@ global.party =
 		hpMax: 89,
 		mp: 10,
 		mpMax: 15,
-		strength: 6,
+		strength: 50,
 		sprites : { idle: sLuluIdle, attack: sLuluAttack, defend: sLuluDefend, down: sLuluDown},
 		actions : [global.actionLibrary.attack]
 	}

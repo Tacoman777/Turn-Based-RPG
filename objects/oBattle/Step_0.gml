@@ -4,10 +4,10 @@ battleState();
 if (cursor.active) {
 	with (cursor) {
 		//input
-		var _keyUp = keyboard_check_pressed(vk_up);
-		var _keyDown = keyboard_check_pressed(vk_down);
-		var _keyLeft = keyboard_check_pressed(vk_left);
-		var _keyRight = keyboard_check_pressed(vk_right);
+		var _keyUp = keyboard_check_pressed(ord("W"));
+		var _keyDown = keyboard_check_pressed(ord("S"));
+		var _keyLeft = keyboard_check_pressed(ord("A"));
+		var _keyRight = keyboard_check_pressed(ord("D"));
 		var _keyToggle = false;
 		var _keyConfirm = false;
 		var _keyCancel = false;
@@ -37,7 +37,7 @@ if (cursor.active) {
 			if (_moveV == -1) targetIndex--;
 			
 			//wrap
-			 var _targets = array_length(targetSide);
+			var _targets = array_length(targetSide);
 			if (targetIndex < 0) targetIndex = _targets - 1;
 			if (targetIndex > (_targets - 1)) targetIndex = 0;
 			

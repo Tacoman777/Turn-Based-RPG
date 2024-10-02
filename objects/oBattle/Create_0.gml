@@ -200,12 +200,26 @@ function BattleStatePerformAction() {
 }
 
 function BattleStateVictoryCheck() {
+	
 	//Checks if there are still enemies left
+	
 	for(var i = 0; i < array_length(enemyUnits); i++) {
-		if(enemyUnits[i]) {
-			room_goto(0);
+		var _enemy = enemyUnits[i];
+		if (_enemy.hp <= 0) {
+			array_delete(oBattle.enemyUnits, _enemy.acting, 1);
+			
 		}
+		
 	}
+	
+	show_debug_message(oBattle.enemyUnits);
+	show_debug_message(enemyUnits);
+	//for(var i = 0; i < array_length(enemyUnits); i++) {
+	//	if(enemyUnits[i] == 0) {
+	//		room_goto(0);
+	//	}
+	//}
+	
 	//var _enemyAction = _unit.AIscript();
 	//if (_enemyAction != -1) BeginAction(_unit.id, _enemyAction[0], _enemyAction[1]);
 	

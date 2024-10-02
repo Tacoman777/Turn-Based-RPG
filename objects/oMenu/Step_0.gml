@@ -1,5 +1,5 @@
 if (active) {
-	hover += keyboard_check_pressed(vk_down) - keyboard_check_pressed(vk_up) 
+	hover += keyboard_check_pressed(ord("S")) - keyboard_check_pressed(ord("W")) 
 	//Makes it so cursor go back to top if going down on bottom option and vice versa
 	if (hover > array_length(options)-1) hover = 0;
 	if (hover < 0) hover = array_length(options)-1;
