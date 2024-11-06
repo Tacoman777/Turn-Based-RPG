@@ -202,15 +202,29 @@ function BattleStatePerformAction() {
 function BattleStateVictoryCheck() {
 	
 	//Checks if there are still enemies left
-	
+	var allEnemiesDead = true;
 	for(var i = 0; i < array_length(enemyUnits); i++) {
 		var _enemy = enemyUnits[i];
-		if (_enemy.hp <= 0) {
-			array_delete(oBattle.enemyUnits, _enemy.acting, 1);
-			
+		if (_enemy.hp > 0) {
+			allEnemiesDead = false;	
 		}
-		
 	}
+	if(allEnemiesDead == true) {
+		room_goto(0);
+	}
+	//Checks if party is alive
+	var allPartyDead = true;
+	for(var i = 0; i < array_length(enemyUnits); i++) {
+		var _party = partyUnits[i];
+		if (_party.hp > 0) {
+			allPartyDead = false;	
+		}
+	}
+	if(allPartyDead == true) {
+		room_goto(0);
+	}
+	
+	
 	
 	show_debug_message(oBattle.enemyUnits);
 	show_debug_message(enemyUnits);
