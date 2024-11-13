@@ -167,35 +167,6 @@ global.enemies =
 			return [_action, _target];
 		}
 	},
-	joker: 
-	{
-		name: "Joker",
-		hp: 30,
-		hpMax: 30,
-		mp: 0,
-		mpMax: 0,
-		strength: 8,
-		sprites: { idle: sJoker, attack: sJokerAttack},
-		actions: [global.actionLibrary.attack],
-		xpValue : 300,
-		AIscript : function()
-		{
-			//enemy turn ai goes here
-			//bat ai attack random party member
-			var _action = actions[0];
-			
-			//removes dead characters from targets
-			//Makes new array from old array and includes in new array if true
-			var _possibleTargets = array_filter(oBattle.partyUnits, function(_unit, _index) {
-				return (_unit.hp > 0);
-			});
-			//chooses random target from array
-			//if no possible targets game will crash
-			//victory check will happen before this so its ok
-			var _target = _possibleTargets[irandom(array_length(_possibleTargets)-1)];
-			return [_action, _target];
-		}
-	}
 }
 
 

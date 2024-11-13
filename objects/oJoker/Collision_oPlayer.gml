@@ -1,1 +1,0 @@
-NewEncounter([global.enemies.joker, global.enemies.joker], sBgField);
