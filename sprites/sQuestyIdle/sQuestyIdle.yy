@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"BattleUnits",
-    "path":"folders/Sprites/BattleUnits.yy",
+    "name":"sQuesty",
+    "path":"folders/Sprites/BattleUnits/sQuesty.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

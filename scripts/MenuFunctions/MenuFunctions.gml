@@ -12,7 +12,7 @@ function Menu(_x, _y, _options, _description = -1, _width = undefined, _height =
 		xmargin = 10;
 		ymargin = 8;
 		draw_set_font(fnM5x7);
-		heightLine =12;
+		heightLine = 12;
 		
 		//Auto Width
 		// Makes Width the max of itself or the option being checked

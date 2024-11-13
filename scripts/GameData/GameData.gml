@@ -25,7 +25,7 @@ global.actionLibrary =
 		targetRequired : true,
 		targetEnemyByDefault : true, //0: party/self, 1: enemy
 		targetAll : MODE.VARIES,
-		userAnimation : "cast",
+		userAnimation : "ice",
 		effectSprite : sAttackIce,
 		effectOnTarget : MODE.ALWAYS,
 		func : function(_user, _targets) {
@@ -33,6 +33,31 @@ global.actionLibrary =
 			//BattleChangeHP(_targets[0], -_damage, 0);
 			for (var i = 0; i < array_length(_targets); i++) {
 				var _damage = irandom_range(15,20);
+				if (array_length(_targets) > 1) _damage = ceil(_damage*0.75);
+				BattleChangeHP(_targets[i], -_damage);
+			}
+			
+			
+			//BattleChangeMP(_user, -mpCost)
+		}
+	},
+	fire :
+	{
+		name : "Fire",
+		description : "{0} casts Fire!",
+		subMenu : "Magic",
+		mpCost : 4,
+		targetRequired : true,
+		targetEnemyByDefault : true, //0: party/self, 1: enemy
+		targetAll : MODE.VARIES,
+		userAnimation : "fire",
+		effectSprite : sAttackFire,
+		effectOnTarget : MODE.ALWAYS,
+		func : function(_user, _targets) {
+			//var _damage = irandom_range(10,15);
+			//BattleChangeHP(_targets[0], -_damage, 0);
+			for (var i = 0; i < array_length(_targets); i++) {
+				var _damage = irandom_range(13,22);
 				if (array_length(_targets) > 1) _damage = ceil(_damage*0.75);
 				BattleChangeHP(_targets[i], -_damage);
 			}
@@ -63,7 +88,7 @@ global.party =
 		hpMax: 89,
 		mp: 10,
 		mpMax: 15,
-		strength: 50,
+		strength: 20,
 		sprites : { idle: sLuluIdle, attack: sLuluAttack, defend: sLuluDefend, down: sLuluDown},
 		actions : [global.actionLibrary.attack]
 	}
@@ -75,8 +100,8 @@ global.party =
 		mp: 20,
 		mpMax: 30,
 		strength: 4,
-		sprites : { idle: sQuestyIdle, attack: sQuestyCast, cast: sQuestyCast, down: sQuestyDown},
-		actions : [global.actionLibrary.attack, global.actionLibrary.ice]
+		sprites : { idle: sQuestyIdle, attack: sQuestyCast, ice: sQuestyIce, fire: sQuestyFire, down: sQuestyDown},
+		actions : [global.actionLibrary.attack, global.actionLibrary.ice, global.actionLibrary.fire]
 	}
 ]
 
