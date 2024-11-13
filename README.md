@@ -1,5 +1,5 @@
 # Tacoman777's Turn Based RPG
-### Made by Tacoman777 and [MlgEpicCar](https://github.com/MlgEpicCar)
+### Made by [Tacoman777](https://github.com/Tacoman777) and [MlgEpicCar](https://github.com/MlgEpicCar)
 
 ## Dev Tools
 
