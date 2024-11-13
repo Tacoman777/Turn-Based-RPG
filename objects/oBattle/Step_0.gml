@@ -85,3 +85,9 @@ if (kill == true) {
 	//fix joker
 	//dont switch mlg's waters around
 }
+
+if (keyboard_check(ord("R"))) {
+	ini_open("Save.ini");
+	ini_section_delete("player_pos");
+	ini_close();
+}

@@ -19,4 +19,32 @@ FourDirectionAnimate();
 x += lengthdir_x(spdWalk*_inputM,_inputD);
 y += lengthdir_y(spdWalk*_inputM,_inputD);
 
-
+if (keyboard_check(ord("R"))) { // Erase
+	ini_open("Save.ini");
+	ini_section_delete("player_pos");
+	ini_close();
+	x = 192;
+	y = 224;
+}
+if (keyboard_check(ord("F"))) { // Save
+	ini_open("Save.ini");
+	ini_write_string("player_pos", "object", object_get_name(oPlayer));
+	ini_write_real("player_pos", "x", x);
+	ini_write_real("player_pos", "y", y);
+	ini_close();
+}
+if (keyboard_check(ord("T"))) { // Load
+	ini_open("Save.ini");
+	var obj = ini_read_string("player_pos", "object", "");
+	x = ini_read_real("player_pos", "x", 192);
+	y = ini_read_real("player_pos", "y", 224);
+	if obj != ""
+	{
+	switch(obj)
+		{
+		case "obj_Player": instance_create(xx, yy, obj_Player); break;
+		// add more cases for each object
+		} 
+	}
+	ini_close();
+}

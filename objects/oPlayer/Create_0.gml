@@ -14,3 +14,17 @@ function FourDirectionAnimate() {
 		animIndex -= _animLength;
 	} else animationEnd = false;
 }
+
+
+ini_open("Save.ini");
+var obj = ini_read_string("player_pos", "object", "");
+x = ini_read_real("player_pos", "x", 192);
+y = ini_read_real("player_pos", "y", 224);
+if obj != ""
+{
+switch(obj)
+	{
+	case "obj_Player": instance_create(xx, yy, obj_Player); break;
+	// add more cases for each object
+	} 
+}
