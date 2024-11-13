@@ -4,10 +4,10 @@
 ## Dev Tools
 
 **R = Reset**
-||*Erase saved player location data and set player back to spawn*
+|| *Erase saved player location data and set player back to spawn*
 
 **F = Save**
-||*Save the players current location*
+|| *Save the players current location*
 
 **T = Load**
-||*Load saved player location*
+|| *Load saved player location*
