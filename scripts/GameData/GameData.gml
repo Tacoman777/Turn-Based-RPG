@@ -65,6 +65,22 @@ global.actionLibrary =
 			
 			//BattleChangeMP(_user, -mpCost)
 		}
+	},
+	truths :
+	{
+		name : "Myriad Truths",
+		description : "{0}: All will be revealed!",
+		subMenu : "Magic",
+		targetRequired : true,
+		targetEnemyByDefault : true,
+		targetAll : MODE.ALWAYS,
+		userAnimation : "attack",
+		effectSprite : sAttackBonk,
+		effectOnTarget : MODE.ALWAYS,
+		func : function(_user, _targets) {
+			var _damage = ceil(_user.strength + random_range(-_user.strength * 100, _user.strength * 1000));
+			BattleChangeHP(_targets[0], -_damage, 0);
+		}
 	}
 	
 	
@@ -90,7 +106,7 @@ global.party =
 		mpMax: 15,
 		strength: 20,
 		sprites : { idle: sLuluIdle, attack: sLuluAttack, defend: sLuluDefend, down: sLuluDown},
-		actions : [global.actionLibrary.attack]
+		actions : [global.actionLibrary.attack, global.actionLibrary.truths]
 	}
 	,
 	{
@@ -101,7 +117,7 @@ global.party =
 		mpMax: 30,
 		strength: 4,
 		sprites : { idle: sQuestyIdle, attack: sQuestyCast, ice: sQuestyIce, fire: sQuestyFire, down: sQuestyDown},
-		actions : [global.actionLibrary.attack, global.actionLibrary.ice, global.actionLibrary.fire]
+		actions : [global.actionLibrary.attack, global.actionLibrary.ice, global.actionLibrary.fire, global.actionLibrary.truths]
 	}
 ]
 
