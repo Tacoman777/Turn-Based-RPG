@@ -1,5 +1,6 @@
   instance_deactivate_all(true);
  
+ 
 units = [];
 turn = 0;
 turnCount = 0;
@@ -210,7 +211,8 @@ function BattleStateVictoryCheck() {
 		}
 	}
 	if(allEnemiesDead == true) {
-		room_goto(0);
+		instance_activate_all();
+		instance_destroy();
 	}
 	//Checks if party is alive
 	var allPartyDead = true;
@@ -221,21 +223,11 @@ function BattleStateVictoryCheck() {
 		}
 	}
 	if(allPartyDead == true) {
-		room_goto(0);
+		room_goto(0); // fix later
 	}
 	
 	
 	
-	show_debug_message(oBattle.enemyUnits);
-	show_debug_message(enemyUnits);
-	//for(var i = 0; i < array_length(enemyUnits); i++) {
-	//	if(enemyUnits[i] == 0) {
-	//		room_goto(0);
-	//	}
-	//}
-	
-	//var _enemyAction = _unit.AIscript();
-	//if (_enemyAction != -1) BeginAction(_unit.id, _enemyAction[0], _enemyAction[1]);
 	
 	battleState = BattleStateTurnProgression;
 }

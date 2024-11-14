@@ -15,7 +15,6 @@ function FourDirectionAnimate() {
 	} else animationEnd = false;
 }
 
-
 ini_open("Save.ini");
 var obj = ini_read_string("player_pos", "object", "");
 x = ini_read_real("player_pos", "x", 192);
@@ -28,3 +27,5 @@ switch(obj)
 	// add more cases for each object
 	} 
 }
+
+ini_close();
