@@ -56,8 +56,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"BattleUnits",
-    "path":"folders/Sprites/BattleUnits.yy",
+    "name":"sLulu",
+    "path":"folders/Sprites/BattleUnits/sLulu.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

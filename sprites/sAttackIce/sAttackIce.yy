@@ -32,8 +32,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"BattleEffects",
-    "path":"folders/Sprites/BattleEffects.yy",
+    "name":"AttackSprites",
+    "path":"folders/Sprites/BattleEffects/AttackSprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

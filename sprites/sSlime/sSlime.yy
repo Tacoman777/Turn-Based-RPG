@@ -28,8 +28,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"BattleUnits",
-    "path":"folders/Sprites/BattleUnits.yy",
+    "name":"sSlime",
+    "path":"folders/Sprites/BattleUnits/sSlime.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
