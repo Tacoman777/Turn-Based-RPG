@@ -1,4 +1,4 @@
-  instance_deactivate_all(true);
+instance_deactivate_all(true);
  
  
 units = [];
