@@ -1,11 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"oSlime",
+  "%Name":"oSlimeG",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oSlime",
+  "name":"oSlimeG",
   "overriddenProperties":[],
   "parent":{
     "name":"Field",
@@ -30,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sSlime",
-    "path":"sprites/sSlime/sSlime.yy",
+    "name":"sSlimeG",
+    "path":"sprites/sSlimeG/sSlimeG.yy",
   },
   "spriteMaskId":null,
   "visible":true,

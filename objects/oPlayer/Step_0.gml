@@ -36,8 +36,6 @@ if (keyboard_check(ord("F"))) { // Save
 if (keyboard_check(ord("T"))) { // Load
 	ini_open("Save.ini");
 	var obj = ini_read_string("player_pos", "object", "");
-	x = ini_read_real("player_pos", "x", 192);
-	y = ini_read_real("player_pos", "y", 224);
 	if obj != ""
 	{
 	switch(obj)

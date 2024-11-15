@@ -126,13 +126,43 @@ global.enemies =
 {
 	slimeG: 
 	{
-		name: "Slime",
+		name: "Green Slime",
 		hp: 30,
 		hpMax: 30,
 		mp: 0,
 		mpMax: 0,
 		strength: 5,
-		sprites: { idle: sSlime, attack: sSlimeAttack},
+		sprites: { idle: sSlimeG, attack: sSlimeGAttack},
+		actions: [global.actionLibrary.attack],
+		xpValue : 15,
+		AIscript : function()
+		{
+			//enemy turn ai goes here
+			//slime ai attack random party member
+			var _action = actions[0];
+			
+			//removes dead characters from targets
+			//Makes new array from old array and includes in new array if true
+			var _possibleTargets = array_filter(oBattle.partyUnits, function(_unit, _index) {
+				return (_unit.hp > 0);
+			});
+			//chooses random target from array
+			//if no possible targets game will crash
+			//victory check will happen before this so its ok
+			var _target = _possibleTargets[irandom(array_length(_possibleTargets)-1)];
+			return [_action, _target];
+		}
+	}
+	,
+	slimeB: 
+	{
+		name: "Blue Slime",
+		hp: 30,
+		hpMax: 30,
+		mp: 0,
+		mpMax: 0,
+		strength: 5,
+		sprites: { idle: sSlimeB, attack: sSlimeBAttack},
 		actions: [global.actionLibrary.attack],
 		xpValue : 15,
 		AIscript : function()
