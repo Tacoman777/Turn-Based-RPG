@@ -3,6 +3,12 @@ var _inputV = keyboard_check(ord("S")) - keyboard_check(ord("W"));
 var _inputD = point_direction(0,0,_inputH,_inputV);
 var _inputM = point_distance(0,0,_inputH,_inputV);
 
+xSpeed = lengthdir_x(spdWalk*_inputM,_inputD);
+ySpeed = lengthdir_y(spdWalk*_inputM,_inputD);
+
+PlayerCollision();
+
+
 if (_inputM != 0)
 {
 	direction = _inputD;	
@@ -16,8 +22,6 @@ else
 
 FourDirectionAnimate();
 
-x += lengthdir_x(spdWalk*_inputM,_inputD);
-y += lengthdir_y(spdWalk*_inputM,_inputD);
 
 if (keyboard_check(ord("R"))) { // Erase
 	ini_open("Save.ini");
