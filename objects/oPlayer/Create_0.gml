@@ -19,17 +19,30 @@ function FourDirectionAnimate() {
 	} else animationEnd = false;
 }
 
-ini_open("Save.ini");
-var obj = ini_read_string("player_pos", "object", "");
-x = ini_read_real("player_pos", "x", 192);
-y = ini_read_real("player_pos", "y", 224);
-if obj != ""
-{
-switch(obj)
-	{
-	case "obj_Player": instance_create(xx, yy, obj_Player); break;
-	// add more cases for each object
-	} 
+// Check if Player x and y have been set already
+// Sets player spawn location to the desired x and y 
+if (variable_global_exists("targetX") && global.targetX != -1) {
+	x = global.targetX;
+	y = global.targetY;
+	direction = global.targetDirection;
 }
 
-ini_close();
+
+// Room Transition no like code below this line
+// Probably because bro sets x and y 
+
+// Save Code
+//ini_open("Save.ini");
+//var obj = ini_read_string("player_pos", "object", "");
+//x = ini_read_real("player_pos", "x", 192);
+//y = ini_read_real("player_pos", "y", 224);
+//if obj != ""
+//{
+//switch(obj)
+//	{
+//	case "obj_Player": instance_create(xx, yy, obj_Player); break;
+//	// add more cases for each object
+//	} 
+//}
+
+//ini_close();
