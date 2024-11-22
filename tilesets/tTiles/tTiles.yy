@@ -2,9 +2,10 @@
   "$GMTileSet":"v1",
   "%Name":"tTiles",
   "autoTileSets":[
-    {"$GMAutoTileSet":"","%Name":"Grass","closed_edge":false,"name":"Grass","resourceType":"GMAutoTileSet","resourceVersion":"2.0","tiles":[15,48,46,47,18,33,49,19,16,50,31,20,17,34,35,32,],},
-    {"$GMAutoTileSet":"","%Name":"Water","closed_edge":false,"name":"Water","resourceType":"GMAutoTileSet","resourceVersion":"2.0","tiles":[15,54,52,53,24,39,56,41,22,55,37,40,23,26,25,38,],},
-    {"$GMAutoTileSet":"","%Name":"autotile_1","closed_edge":false,"name":"autotile_1","resourceType":"GMAutoTileSet","resourceVersion":"2.0","tiles":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,],},
+    {"$GMAutoTileSet":"","%Name":"Dirt/Grass","closed_edge":false,"name":"Dirt/Grass","resourceType":"GMAutoTileSet","resourceVersion":"2.0","tiles":[15,48,46,47,18,33,49,19,16,50,31,20,17,34,35,32,],},
+    {"$GMAutoTileSet":"","%Name":"Grass/Water","closed_edge":false,"name":"Grass/Water","resourceType":"GMAutoTileSet","resourceVersion":"2.0","tiles":[15,54,52,53,24,39,56,41,22,55,37,40,23,26,25,38,],},
+    {"$GMAutoTileSet":"","%Name":"Water/Grass","closed_edge":false,"name":"Water/Grass","resourceType":"GMAutoTileSet","resourceVersion":"2.0","tiles":[38,25,26,23,40,37,55,22,41,56,39,24,53,52,54,15,],},
+    {"$GMAutoTileSet":"","%Name":"autotile_2","closed_edge":false,"name":"autotile_2","resourceType":"GMAutoTileSet","resourceVersion":"2.0","tiles":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,],},
   ],
   "macroPageTiles":{
     "SerialiseHeight":0,

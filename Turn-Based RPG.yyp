@@ -67,6 +67,7 @@
     {"id":{"name":"oSlimeG","path":"objects/oSlimeG/oSlimeG.yy",},},
     {"id":{"name":"rField0","path":"rooms/rField0/rField0.yy",},},
     {"id":{"name":"rField1","path":"rooms/rField1/rField1.yy",},},
+    {"id":{"name":"rField2","path":"rooms/rField2/rField2.yy",},},
     {"id":{"name":"BattleFunctions","path":"scripts/BattleFunctions/BattleFunctions.yy",},},
     {"id":{"name":"GameData","path":"scripts/GameData/GameData.yy",},},
     {"id":{"name":"MenuFunctions","path":"scripts/MenuFunctions/MenuFunctions.yy",},},
@@ -116,6 +117,7 @@
   "RoomOrderNodes":[
     {"roomId":{"name":"rField1","path":"rooms/rField1/rField1.yy",},},
     {"roomId":{"name":"rField0","path":"rooms/rField0/rField0.yy",},},
+    {"roomId":{"name":"rField2","path":"rooms/rField2/rField2.yy",},},
   ],
   "templateType":null,
   "TextureGroups":[

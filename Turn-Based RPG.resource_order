@@ -46,6 +46,7 @@
     {"name":"oSlimeB","order":9,"path":"objects/oSlimeB/oSlimeB.yy",},
     {"name":"oSlimeG","order":1,"path":"objects/oSlimeG/oSlimeG.yy",},
     {"name":"rField0","order":1,"path":"rooms/rField0/rField0.yy",},
+    {"name":"rField2","order":2,"path":"rooms/rField2/rField2.yy",},
     {"name":"BattleFunctions","order":4,"path":"scripts/BattleFunctions/BattleFunctions.yy",},
     {"name":"GameData","order":3,"path":"scripts/GameData/GameData.yy",},
     {"name":"MenuFunctions","order":6,"path":"scripts/MenuFunctions/MenuFunctions.yy",},
