@@ -22,7 +22,6 @@ else
 
 FourDirectionAnimate();
 
-
 if (keyboard_check(ord("R"))) { // Erase
 	ini_open("Save.ini");
 	ini_section_delete("player_pos");
