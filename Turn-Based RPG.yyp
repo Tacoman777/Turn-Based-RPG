@@ -114,6 +114,7 @@
     {"id":{"name":"sSlimeBAttack","path":"sprites/sSlimeBAttack/sSlimeBAttack.yy",},},
     {"id":{"name":"sSlimeG","path":"sprites/sSlimeG/sSlimeG.yy",},},
     {"id":{"name":"sSlimeGAttack","path":"sprites/sSlimeGAttack/sSlimeGAttack.yy",},},
+    {"id":{"name":"sTree","path":"sprites/sTree/sTree.yy",},},
     {"id":{"name":"sTurnIndicator","path":"sprites/sTurnIndicator/sTurnIndicator.yy",},},
     {"id":{"name":"tCol","path":"tilesets/tCol/tCol.yy",},},
     {"id":{"name":"tFieldTiles","path":"tilesets/tFieldTiles/tFieldTiles.yy",},},

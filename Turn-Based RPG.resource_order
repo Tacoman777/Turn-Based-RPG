@@ -85,6 +85,7 @@
     {"name":"sSlash","order":5,"path":"sprites/sSlash/sSlash.yy",},
     {"name":"sSlimeBAttack","order":1,"path":"sprites/sSlimeBAttack/sSlimeBAttack.yy",},
     {"name":"sSlimeGAttack","order":1,"path":"sprites/sSlimeGAttack/sSlimeGAttack.yy",},
+    {"name":"sTree","order":6,"path":"sprites/sTree/sTree.yy",},
     {"name":"sTurnIndicator","order":3,"path":"sprites/sTurnIndicator/sTurnIndicator.yy",},
     {"name":"tCol","order":1,"path":"tilesets/tCol/tCol.yy",},
     {"name":"tFieldTiles2","order":3,"path":"tilesets/tFieldTiles2/tFieldTiles2.yy",},
