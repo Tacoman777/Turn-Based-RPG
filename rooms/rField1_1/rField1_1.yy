@@ -30,8 +30,8 @@
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oRoomExit","path":"objects/oRoomExit/oRoomExit.yy",},"propertyId":{"name":"targetY","path":"objects/oRoomExit/oRoomExit.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"32",},
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oRoomExit","path":"objects/oRoomExit/oRoomExit.yy",},"propertyId":{"name":"targetRoom","path":"objects/oRoomExit/oRoomExit.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"rField2",},
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oRoomExit","path":"objects/oRoomExit/oRoomExit.yy",},"propertyId":{"name":"targetX","path":"objects/oRoomExit/oRoomExit.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"144",},
-          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":10.0,"scaleY":0.5,"x":0.0,"y":368.0,},
-      ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":10.0,"scaleY":0.5,"x":-320.0,"y":208.0,},
+      ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":false,},
     {"$GMRTileLayer":"","%Name":"Collision","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Collision","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":74,"SerialiseWidth":120,"TileCompressedData":[
           -6,-2147483648,1,1,-117,-2147483648,-3,1,-115,-2147483648,-3,1,-115,-2147483648,-3,1,-479,-2147483648,
           1,1,-31,-2147483648,-6,1,-110,-2147483648,-5,1,-113,-2147483648,-3,1,-116,-2147483648,-2,1,-116,-2147483648,
